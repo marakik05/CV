@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 
 body {
   margin: 0;
-  font-family: 'Raleway';
-  font-size: 16px;
+
+  font-family: 'Calibri', sans-serif;
+  font-size: 18px;
   line-height: 3em;
 }
 
@@ -32,10 +33,14 @@ header, main, footer {
 header {
   padding: 2em;
   text-align: center;
-  background-image: url('./img/bg.jpg');
+  /* σκούρο ημιδιάφανο στρώμα πάνω από την εικόνα για να διαβάζεται το κείμενο */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('./img/bg.jpg');
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
   color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 header section {
@@ -47,6 +52,11 @@ header img {
   border-radius: 50%;
   max-width: 150px;
 }
+header p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 
 h1 {
   text-transform: uppercase;
@@ -82,6 +92,9 @@ main section:not(:last-child) {
 
 a .fab {
   color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border-width: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .course, .skills {
@@ -90,7 +103,7 @@ a .fab {
 }
 
 .course .title {
-  color: #7C0A00;
+  color: #297981;
  
   flex: 0 0 40%;
   max-width: 40%;
@@ -119,7 +132,7 @@ a .fab {
 .skills .column ul > li:before {
   content: "►";
   padding-right: 0.5em;
-  color: #7C0A00;
+  color: #297981;
 }
 
 .school, .job-title {
@@ -127,19 +140,19 @@ a .fab {
 }
 
 .school span, .job-title span {
-  color: #7C0A00;
+  color: #297981;
   text-decoration: underline;
 }
 
 ul.job-description li:before{
   content: "✔";
   padding-right: 0.5em;
-  color: #509e98;
+  color: #297981;
 }
 
 footer {
  padding: 1em 1.5em;
- background: #7C0A00;
+ background: #1e5556;
  color: white;
  text-align: right;
 }
