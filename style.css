@@ -119,7 +119,8 @@ main section:not(:last-child) {
   border-bottom: 1px solid var(--line);
 }
 
-.fab {
+/* Κυκλικά εικονίδια (LinkedIn, GitHub, Email) – το "header .fas" αφορά το εικονίδιο email */
+.fab, header .fas {
   border: 1px solid white;
   border-radius: 50%;
   font-size: 1.5em;
@@ -130,7 +131,7 @@ main section:not(:last-child) {
   text-align: center;
 }
 
-a .fab {
+a .fab, header a .fas {
   color: white;
   background: rgba(0, 0, 0, 0.5);
   border-width: 2px;
