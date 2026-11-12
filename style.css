@@ -56,7 +56,16 @@ header {
 
 header section {
   margin: 0 auto;
+  padding-top: 0;
   max-width: 640px;
+}
+
+/* Υπότιτλος ακριβώς κάτω από το όνομα */
+header p.tagline {
+  font-size: 1.15em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.8em;
 }
 
 header img {
@@ -72,10 +81,10 @@ header p {
 }
 
 h1 {
-  font-family: 'Calibri', monospace;
+  font-family: 'Calibri', 'Inter', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin: 1em 0;
+  margin: 0.6em 0 0.2em;
 }
 
 
