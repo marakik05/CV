@@ -67,6 +67,7 @@ header img {
 header p {
   font-size: 1em;
   font-weight: bold;
+
   
 }
 
@@ -199,7 +200,167 @@ ul.projects {
 }
 
 ul.projects li {
-  margin-bottom: 0.4em;
+  margin-bottom: 1.2em;
+}
+
+/* Περιγραφή κάθε project, στοιχισμένη κάτω από τον τίτλο */
+ul.projects p {
+  margin: 0.2em 0 0 1.7em;
+  color: var(--muted);
+}
+
+/* Γραμμή τεχνολογιών (projects και Experience) */
+p.tech {
+  font-size: 0.9em;
+  color: var(--muted);
+}
+
+ul.projects p.tech {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8em;
+  color: var(--accent);
+}
+
+/* Experience: οι δύο ρόλοι στην ίδια εταιρεία */
+.role {
+  margin-top: 1em;
+}
+
+.role h4 {
+  margin-bottom: 0;
+}
+
+.role-dates {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--muted);
+  margin-left: 0.5em;
+  white-space: nowrap;
+}
+
+/* Τεχνολογίες μέσα στα bullets του Experience */
+ul.job-description strong {
+  color: var(--deep);
+  font-weight: 600;
+}
+
+/* Contact: λίστα με εικονίδια */
+ul.contact-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0.5em;
+}
+
+ul.contact-list li {
+  margin-bottom: 0.3em;
+}
+
+/* Ακυρώνει τον κύκλο που έχουν τα .fab στην κορυφή της σελίδας */
+ul.contact-list i {
+  width: 1.4em;
+  height: auto;
+  font-size: 1em;
+  line-height: inherit;
+  border: none;
+  margin: 0 0.5em 0 0;
+  text-align: center;
+  color: var(--accent);
+}
+
+/* Μεγάλα bullets: η 2η γραμμή στοιχίζεται με το κείμενο, όχι κάτω από το ✔ */
+ul.job-description li {
+  padding-left: 1.4em;
+  text-indent: -1.4em;
+  margin-bottom: 0.3em;
+}
+
+/* Skills: Technical σε δύο στήλες (κατηγορία – εργαλεία) */
+.skills .tech-skills {
+  flex: 0 0 100%;
+}
+
+/* Υπο-τίτλοι των Skills (Languages, Technical): ξεχωρίζουν από τις κατηγορίες */
+.skills h4 {
+  display: inline-block;
+  font-size: 1.15em;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-bottom: 0.15em;
+  border-bottom: 2px solid var(--accent-light);
+  margin: 0.6em 0 0.8em;
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.6em 1.5em;
+  align-items: center;
+  margin: 0;
+  padding-left: 0.5em;
+}
+
+.skill-list dt {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: var(--muted);
+}
+
+.skill-list dd {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+/* Certifications: ημερομηνία αριστερά, τίτλος + φορέας δεξιά */
+ul.certs {
+  list-style: none;
+  margin: 0;
+  padding-left: 0.5em;
+}
+
+ul.certs li {
+  display: grid;
+  grid-template-columns: 6em 1fr;
+  gap: 1em;
+  padding: 0.6em 0;
+  line-height: 1.5;
+}
+
+ul.certs li:not(:last-child) {
+  border-bottom: 1px dashed var(--line);
+}
+
+.cert-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+  color: var(--accent);
+  padding-top: 0.1em;
+}
+
+ul.certs strong {
+  display: block;
+  color: var(--deep);
+}
+
+.cert-meta {
+  font-size: 0.9em;
+  color: var(--muted);
+}
+
+/* Ετικέτες (chips) για κάθε εργαλείο */
+.chip {
+  display: inline-block;
+  padding: 0.15em 0.75em;
+  font-size: 0.85em;
+  line-height: 1.6;
+  color: var(--deep);
+  background: #e3f2fa;
+  border: 1px solid #c3e2f2;
+  border-radius: 999px;
+  white-space: nowrap;
 }
 
 ul.projects li::before {
@@ -274,6 +435,16 @@ footer .social a:hover i {
 @media only screen and (max-width: 576px) {
   .skills {
     display: block;
+  }
+
+  /* Στο κινητό η κατηγορία πάει πάνω από τα εργαλεία */
+  .skill-list {
+    grid-template-columns: 1fr;
+    gap: 0.2em;
+  }
+
+  .skill-list dd {
+    margin-bottom: 0.8em;
   }
 
   footer {

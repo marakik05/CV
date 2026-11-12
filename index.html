@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Maria Korre - CV</title>
-  <meta name="description" content="CV of Maria Korre, a developer.">
+  <meta name="description" content="CV of Maria Korre, Python developer building applications for the agricultural sector.">
   <meta name="author" content="Maria Korre">
+
+  <!-- Open Graph: η "κάρτα" που εμφανίζεται όταν μοιράζεσαι το link (LinkedIn, Facebook, Viber κ.λπ.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maria Korre – Python Developer">
+  <meta property="og:description" content="Python developer building applications for the agricultural sector: desktop and web apps with Python, PyQt, Flask and pandas.">
+  <meta property="og:url" content="https://marakik05.github.io/CV/">
+  <meta property="og:image" content="https://marakik05.github.io/CV/img/avatar.png">
+  <meta property="og:image:alt" content="Maria Korre">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" href="./img/fav.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -22,7 +31,7 @@
     <h1>Maria Korre</h1>
     <section>
       <p>Hi! I'm a Python developer turning agricultural data into useful applications.</p>
-      
+
       <a href="https://www.linkedin.com/in/maria-korre-3926051b5/" target="_blank">
         <i class="fab fa-linkedin-in"></i>
       </a>
@@ -32,111 +41,35 @@
     </section>
   </header>
   <main>
-    
-    <section>
-      <h3>Education</h3>
-      <article>
-        <div class='school'>
-          <span>2026-Present</span> <strong>Harokopio University of Athens</strong>
-        </div>
-        <div class="descrition">
-          Master in Applied Informatics
-        </div>
-      </article>
-      <article>
-        <div class='school'>
-          <span>2011-2017</span> <strong>Agricultural University of Athens</strong>
-        </div>
-        
-        <div>
-          Bachelor in Food Technology and Nutrition Science
-        </div>
-      </article>
-    </section>
-    <section>
-      <h3>Courses</h3>
-      <article class='course'>
-        <div class='title'>
-          
-		  <h4>FreeCodeCamp : Python</h4>
-        </div>
-        <div class="descrition">
-          <p>Learn the fundamentals of Python as a backend language, including data structures and algorithms.</p>
-        </div>
-      </article>
-      <article class='course'>
-        <div class='title'>
-          <h4>FreeCodeCamp: Responsive Web Design</h4>
-        </div>
-        <div class="descrition">
-          <p>Learn the fundamentals of HTML and CSS, including modern layout, design, accessibility, and responsive web development in order to create professional, user-friendly webpages.</p>
-        </div>
-      </article>
-      <article class='course'>
-        <div class='title'>
-          <h4>National and Kapodistrian University of Athens: Python for Business/Digital Skills</h4>
-        </div>
-        <div class="descrition">
-          <p>Learn the fundamentals of Python for business and digital skills.</p>
-        </div>
-      </article>
-      <article class='course'>
-        <div class='title'>
-          <h4>National and Kapodistrian University of Athens : SQL and NoSQL</h4>
-        </div>
-        <div class="descrition">
-          <p>Learn SQL and NoSQL databases.</p>
-        </div>
-      </article>
-    </section>
-    <section>
-      <h3>Skills</h3>
-      <div class='skills'>
-        <div class='column languages'>
-          <h4>Languages</h4>
-          <ul>
-            <li>Greek - Mother Tounge</li>
-            <li>English - Proficient C2</li>
-            <li>German - Intermediate B1</li>
-          </ul>
-          
-
-        </div>
-        <div class='column'>
-          <h4>Good knowledge</h4>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Git and GitHub</li>
-            
-          </ul>
-        </div>
-        <div class='column'>
-          <h4>Basic knowledge</h4>
-          <ul>
-            <li>JavaScript</li>
-            <li>MongoDB</li>
-            <li>PHP</li>
-            
-          </ul>
-        </div>
-      </div>
-    </section>
 
     <section>
       <h3>Experience</h3>
       <article>
         <div class='job-title'>
-          <span>09/2025 - Present</span> <strong>GAIA EPICHEIREIN S.A.</strong><br> <strong>Position:</strong> Python Developer | Support of agricultural web applications
+          <span>07/2017 - Present</span> <strong>GAIA EPICHEIREIN S.A.</strong>
         </div>
-        <div>
-          <p><strong>Tech stack:</strong> Python / SQL </p>
+
+        <div class="role">
+          <h4>Python Developer <span class="role-dates">09/2025 - Present</span></h4>
           <ul class="job-description">
-            <li>Design and develop desktop applications for calculating the standard output, eligibility, and scoring of producers under the Interventions of the Rural Development Programme of Greece</li>
-            <li>Support for the use of agricultural web applications</li>
-            
+            <li>Design and develop desktop applications in <strong>Python</strong> (<strong>PySide/PyQt</strong>) that calculate the standard output, eligibility and scoring of producers under the Interventions of the Greek Rural Development Programme (RDP) 2023-2027</li>
+            <li>Enable batch calculation of the standard output for <strong>thousands of producers in a single run</strong>, replacing a manual, producer-by-producer process and saving a significant amount of working time</li>
+            <li>Process data from Excel/CSV files with <strong>pandas</strong> and <strong>openpyxl</strong></li>
+            <li>Code and dependency security checks with <strong>Bandit</strong> and <strong>pip-audit</strong>, unit testing with <strong>unittest</strong>, and vulnerability monitoring with <strong>GitHub Dependabot</strong></li>
+            <li>Package and distribute applications as standalone executables (.exe) with <strong>PyInstaller</strong> and build installers with <strong>Inno Setup</strong></li>
+            <li>Version control with <strong>Git/GitHub</strong></li>
+            <li>Use AI tools (<strong>Claude Code</strong>) to speed up development and automate repetitive programming tasks</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <h4>Agricultural Consultant | Support of Agricultural Digital Applications <span class="role-dates">07/2017 - Present</span></h4>
+          <ul class="job-description">
+            <li>Functional testing of digital applications before release to end users, identifying bugs and reporting them to the development team</li>
+            <li>Support agronomists of partner organisations in using the RDP applications and deliver trainings on RDP funding tools and digital applications</li>
+            <li>Advise agricultural cooperatives across Greece on submitting and monitoring RDP applications</li>
+            <li>Prepare, submit and technically monitor investment plans of producers, businesses and cooperatives</li>
+            <li>Coordinate Operational Groups running pilot projects in the agri-food sector</li>
           </ul>
         </div>
       </article>
@@ -145,15 +78,122 @@
       <h3>Personal Projects</h3>
       <article>
         <ul class="projects">
-          <li><a href="https://github.com/marakik05/paa_app_web" target="_blank">PAA App Web – Web Application for Standard Output Calculation</a></li>
-          <li><a href="https://github.com/marakik05/Investment_Plan_Web_Application" target="_blank">Investment Plan Calculator – Web Application for Agricultural Investments</a></li>
-          <li><a href="https://github.com/marakik05/Application-for-Calculating-Scores" target="_blank">Application for Calculating Scores – Desktop Scoring Application</a></li>
+          <li>
+            <a href="https://github.com/marakik05/paa_app_web" target="_blank"><strong>PAA App Web</strong> – Standard Output Calculation</a>
+            <p>Flask web application that calculates the standard output of producers applying to the RDP 2023-2027 Interventions. REST API, SQLite storage, .xlsx import/export (openpyxl), automated tests (unittest, Playwright) and CI security scans (Bandit, pip-audit) via GitHub Actions.</p>
+            <p class="tech">Python · Flask · JavaScript · HTML · CSS · SQLite</p>
+          </li>
+          <li>
+            <a href="https://github.com/marakik05/Investment_Plan_Web_Application" target="_blank"><strong>Investment Plan Calculator</strong> – Agricultural Investments</a>
+            <p>Flask web application that calculates the total investment budget and subsidy of applications under Interventions P3-73-2.1, 2.2 and 2.6 of the RDP 2023-2027. Validation on both backend (Flask) and frontend (JavaScript Fetch API).</p>
+            <p class="tech">Python · Flask · HTML · CSS · JavaScript</p>
+          </li>
+          <li>
+            <a href="https://github.com/marakik05/Application-for-Calculating-Scores" target="_blank"><strong>Application for Calculating Scores</strong> – Desktop Scoring Application</a>
+            <p>Desktop application (PyQt5) that automates the scoring of producers for Intervention P3-73-2.9 of the RDP 2023-2027. Exports detailed scores to Excel and is distributed as a portable .exe (PyInstaller).</p>
+            <p class="tech">Python · PyQt5 · pandas · NumPy · PyInstaller</p>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section>
+      <h3>Skills</h3>
+      <div class='skills'>
+        <div class='column languages'>
+          <h4>Languages</h4>
+          <ul>
+            <li>Greek - Mother Tongue</li>
+            <li>English - Proficient C2 (Michigan Proficiency)</li>
+            <li>German - Intermediate B1 (Goethe-Zertifikat)</li>
+          </ul>
+        </div>
+        <div class='tech-skills'>
+          <h4>Technical</h4>
+          <dl class="skill-list">
+            <dt>Backend</dt>
+            <dd><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">PHP (basic)</span></dd>
+            <dt>Desktop</dt>
+            <dd><span class="chip">PySide/PyQt</span><span class="chip">PyInstaller</span><span class="chip">Inno Setup</span></dd>
+            <dt>Data</dt>
+            <dd><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">openpyxl</span></dd>
+            <dt>Frontend</dt>
+            <dd><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></dd>
+            <dt>Databases</dt>
+            <dd><span class="chip">SQL</span><span class="chip">SQLite</span><span class="chip">MongoDB</span></dd>
+            <dt>Testing &amp; Security</dt>
+            <dd><span class="chip">unittest</span><span class="chip">Playwright</span><span class="chip">Bandit</span><span class="chip">pip-audit</span><span class="chip">Dependabot</span></dd>
+            <dt>Version Control &amp; CI</dt>
+            <dd><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">GitHub Actions</span></dd>
+            <dt>AI Tools</dt>
+            <dd><span class="chip">Claude</span><span class="chip">Claude Code</span></dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3>Education</h3>
+      <article>
+        <div class='school'>
+          <span>09/2026 - Present</span> <strong>Harokopio University of Athens</strong>
+        </div>
+        <div class="descrition">
+          <p><strong>MSc in Applied Informatics</strong>, Department of Informatics and Telematics<br>
+          Software Development, Data Management, Computing &amp; Web Infrastructures, Information Systems &amp; Innovation</p>
+        </div>
+      </article>
+      <article>
+        <div class='school'>
+          <span>2011 - 2017</span> <strong>Agricultural University of Athens</strong>
+        </div>
+        <div class="descrition">
+          <p><strong>BSc in Food Science and Human Nutrition</strong>, graduated with Excellent grade<br>
+          Excellence Award (2016) for completing studies within 9 semesters with the highest grade</p>
+        </div>
+      </article>
+    </section>
+    <section>
+      <h3>Certifications</h3>
+      <article>
+        <ul class="certs">
+          <li>
+            <span class="cert-date">06/2026</span>
+            <div>
+              <strong>Python</strong>
+              <span class="cert-meta">freeCodeCamp · 300 hours</span>
+            </div>
+          </li>
+          <li>
+            <span class="cert-date">01/2026</span>
+            <div>
+              <strong>Responsive Web Design (HTML &amp; CSS)</strong>
+              <span class="cert-meta">freeCodeCamp · 300 hours</span>
+            </div>
+          </li>
+          <li>
+            <span class="cert-date">01/2026</span>
+            <div>
+              <strong>Python for Business / Digital Skills</strong>
+              <span class="cert-meta">National and Kapodistrian University of Athens · 8-month e-learning</span>
+            </div>
+          </li>
+          <li>
+            <span class="cert-date">03/2025</span>
+            <div>
+              <strong>SQL and NoSQL</strong>
+              <span class="cert-meta">National and Kapodistrian University of Athens · 3-month e-learning</span>
+            </div>
+          </li>
         </ul>
       </article>
     </section>
     <section>
       <h3>Contact</h3>
-      <p>Email: <a href="mailto:m.korre29@gmail.com">m.korre29@gmail.com</a></p>
+      <ul class="contact-list">
+        <li><i class="fas fa-map-marker-alt"></i> Athens, Greece</li>
+        <li><i class="fas fa-envelope"></i> <a href="mailto:m.korre29@gmail.com">m.korre29@gmail.com</a></li>
+        <li><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/maria-korre-3926051b5/" target="_blank">linkedin.com/in/maria-korre-3926051b5</a></li>
+        <li><i class="fab fa-github"></i> <a href="https://github.com/marakik05" target="_blank">github.com/marakik05</a></li>
+      </ul>
     </section>
   </main>
   <footer>
